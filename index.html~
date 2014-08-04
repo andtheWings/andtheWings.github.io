@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grayscale - Free One Page Theme for Bootstrap 3</title>
+    <title>Landing Page for Daniel Riggins</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -66,60 +66,24 @@
                         <h1 class="brand-heading">Daniel Riggins</h1>
                         <p class="intro-text">Hi, I'm Daniel Riggins, a first year medical student at <a href="http://einstein.yu.edu/" target="_blank">Albert Einstein College of Medicine</a> in Bronx, NY.</p>
 
-				<p>After graduating from <a href="http://www.kenyon.edu/academics/departments-programs/biochemistry/" target="_blank">Kenyon College</a> in 2012, I worked as a post-baccalaureate research fellow at the <a href="http://www.fda.gov/BiologicsBloodVaccines/ScienceResearch/BiologicsResearchAreas/ucm127276.htm" target="_blank">FDA</a>.</p>
-
-				<p>Find me on <a href="https://twitter.com/DanRiggins" target="_blank">Twitter</a> and <a href="http://blog.danielriggins.com" target="_blank">Tumblr<a/>.</p>
-                        <div class="page-scroll">
-                            <a href="#about" class="btn btn-circle">
-                                <i class="fa fa-angle-double-down animated"></i>
-                            </a>
-                        </div>
+						<p>After graduating from <a href="http://www.kenyon.edu/academics/departments-programs/biochemistry/" target="_blank">Kenyon College</a> in 2012, I worked as a post-baccalaureate research fellow at the <a href="http://www.fda.gov/BiologicsBloodVaccines/ScienceResearch/BiologicsResearchAreas/ucm127276.htm" target="_blank">FDA</a>.</p>
+						
+						<ul class="list-inline banner-social-buttons">
+                    		<li><a href="http://blog.danielriggins.com" target="_blank" class="btn btn-default btn-lg"> <span class="network-name">Blog (Tumblr)</span></a>
+                    		</li>
+                    		<li><a href="https://twitter.com/DanRiggins" class="btn btn-default btn-lg" target="_blank"> <span class="network-name">Twitter</span></a>
+                    		</li>
+                    		<li><a href="http://danielriggins.com/cv/" class="btn btn-default btn-lg"> <span class="network-name">Curriculum Vitae</span></a>
+                    		</li>
+                    		<li><a href="http://danielriggins/wiki/" class="btn btn-default btn-lg"><span class="network-name">Wiki</span></a>
+                    		</li>
+                		</ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Me</h2>
-                
-            </div>
-        </div>
-    </section>
-
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the download page at Start Bootstrap. You can also get the source code directly from GitHub if you prefer. Additionally, Grayscale is the first Start Bootstrap theme to come with a LESS file for easy color customization!</p>
-                    <a href="http://startbootstrap.com/grayscale" class="btn btn-default btn-lg">Visit Download Page</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p>feedback@startbootstrap.com</p>
-                <ul class="list-inline banner-social-buttons">
-                    <li><a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li><a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li><a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <div id="map"></div>
 
     <!-- Core JavaScript Files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
