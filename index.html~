@@ -31,7 +31,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">Start</span> Bootstrap
+                    <i class="fa fa-play-circle"></i>  Return to Top
                 </a>
             </div>
 
@@ -43,7 +43,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="#about">About Me</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#download">Download</a>
@@ -63,8 +63,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Grayscale</h1>
-                        <p class="intro-text">A free, premium quality, responsive one page Bootstrap theme created by Start Bootstrap.</p>
+                        <h1 class="brand-heading">Daniel Riggins</h1>
+                        <p class="intro-text">Hi, I'm Daniel Riggins, a first year medical student at <a href="http://einstein.yu.edu/" target="_blank">Albert Einstein College of Medicine</a> in Bronx, NY.</p>
+
+				<p>After graduating from <a href="http://www.kenyon.edu/academics/departments-programs/biochemistry/" target="_blank">Kenyon College</a> in 2012, I worked as a post-baccalaureate research fellow at the <a href="http://www.fda.gov/BiologicsBloodVaccines/ScienceResearch/BiologicsResearchAreas/ucm127276.htm" target="_blank">FDA</a>.</p>
+
+				<p>Find me on <a href="https://twitter.com/DanRiggins" target="_blank">Twitter</a> and <a href="http://blog.danielriggins.com" target="_blank">Tumblr<a/>.</p>
                         <div class="page-scroll">
                             <a href="#about" class="btn btn-circle">
                                 <i class="fa fa-angle-double-down animated"></i>
@@ -79,10 +83,8 @@
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a premium quality, free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, all you need to do is download the template on the preview page. You can use this template for any purpose, personal or commercial.</p>
-                <p>This striking, black and white theme features stock photographs by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Map skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>With this template, just the slightest splash of color can make a huge impact on the overall presentation and design.</p>
+                <h2>About Me</h2>
+                
             </div>
         </div>
     </section>
