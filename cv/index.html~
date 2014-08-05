@@ -219,6 +219,22 @@
 								</ul>
 				        	</div>
 				        </div>
+				        <div class="inner-seperator"></div>
+				        
+				        <div class="clearfix">
+			        		<div class="row">
+				        		<div class="span">
+				        			<div class="item-name">Medical Doctorate</div>
+				        			<div class="item-desc">Albert Einstein College of Medicine -- Bronx, NY</div>
+				        		</div>	
+				        		<div class="item-period pull-right span">2014 - Present</div>
+				        	</div>
+				        	<div class="margin-top-10">	
+				        		<ul>
+				        			<li>Jeffrey Schulman Memorial Scholar</li>
+							</ul>
+				        	</div>
+				        </div>
 				</div>
 			</div>
 					
@@ -233,7 +249,7 @@
 		        	</div>
 		        	<div class="span section-body">
 			        	<ul>
-			        		<li>Riggins, D.P., Narvaez, M.J., Martinez, K.A., Harden, M.M., & Slonczewski J.L. (2013). <em>Escherichia coli</em> K-12 survives anaerobic exposure at pH 2 without RpoS, Gad, or hydrogenases, but shows sensitivity to autoclaved broth products. PLoS One, 8(3), e56796. doi: 10.1371/journal.pone.0056796</li>
+			        		<li><a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0056796" target="_blank">Riggins, D.P., Narvaez, M.J., Martinez, K.A., Harden, M.M., & Slonczewski J.L. (2013). <em>Escherichia coli</em> K-12 survives anaerobic exposure at pH 2 without RpoS, Gad, or hydrogenases, but shows sensitivity to autoclaved broth products. PLoS One, 8(3), e56796. doi: 10.1371/journal.pone.0056796</a></li>
 			        		<li><a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0010132" target="_blank">Noguchi, K., Riggins, D.P., Eldahan, K.C., Kitko, R.D., & Slonczewski, J.L. (2010). Hydrogenase-3 Contributes to Anaerobic Acid Resistance of <em>Escherichia coli</em>. PLoS One, 8(3), e56796. doi: 10.1371/journal.pone.0056796</a></li>
 					</ul>	
 			        </div>
