@@ -7,7 +7,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/cv.css" rel="stylesheet">		
+		<link href="css/cv.css" rel="stylesheet">
 	</head>
 	<body>
 
@@ -30,18 +30,14 @@
 
 		        	<div class="span pull-right">
 						<div class="span">
-							<address class="margin-bottom-5">
-							8309 Old Georgetown Rd.<br>
-							Bethesda, MD 20814
-							</address>							
+							<abbr rel="tooltip" data-original-title="Website"></abbr><a href="http://danielriggins.com/blog">My Blog</a><br>
 							<abbr rel="tooltip" data-original-title="Phone"></abbr>202-615-3339<br>
 							<abbr rel="tooltip" data-original-title="Email"></abbr>rigginsda[at]gmail.com<br>
-							<abbr rel="tooltip" data-original-title="Website"></abbr><a href="danielriggins.com/blog">My Blog</a><br>
 							<div class="margin-top-5 margin-bottom-5">
 								<a href="http://www.linkedin.com/pub/daniel-riggins/18/205/a33/" target="_blank" rel="tooltip" data-original-title="LinkedIn"><img src="img/linkedin.png" alt="LinkedIn" width="20"/></a>&nbsp;
-								<a href="https://twitter.com/danriggins" target="_blank" rel="tooltip" data-original-title="Twitter"><img src="img/twitter.png" alt="Twitter" width="20"/></a>&nbsp;
-								<a href="https://alpha.app.net/thewings" target="_blank" rel="tooltip" data-original-title="app.net"><img src="img/appnet.png" alt="app.net" width="20"/></a>&nbsp;
-								<a href="https://github.com/andtheWings" target="_blank" rel="tooltip" data-original-title="Github"><img src="img/github.png" alt="Github" width="20"/></a>&nbsp;
+								<a href="https://twitter.com/danriggins" target="_blank" rel="tooltip me" data-original-title="Twitter"><img src="img/twitter.png" alt="Twitter" width="20"/></a>&nbsp;
+								<a href="https://alpha.app.net/thewings" target="_blank" rel="tooltip me" data-original-title="app.net"><img src="img/appnet.png" alt="app.net" width="20"/></a>&nbsp;
+								<a href="https://github.com/andtheWings" target="_blank" rel="tooltip me" data-original-title="Github"><img src="img/github.png" alt="Github" width="20"/></a>&nbsp;
 							</div>
 						</div>				
 
@@ -79,8 +75,8 @@
 								<li>Genetics - Clone Manager</li>
 								<li>Visualization - <a href="http://biology.kenyon.edu/BMB/Jmol2010/Shiga2/index.html" target="_blank">JMol</a>
 								<li>Statistics - R and Python</li>
-								<li>Web Development - <a href="http://www.codecademy.com/betaPro69547" target="_blank">HTML, CSS, Javascript</a>, and Git/Github</li>
 								<li>Linux - Arch and Ubuntu</li>
+								<li>Web Development - <a href="http://www.codecademy.com/betaPro69547" target="_blank">HTML, CSS, Javascript/Node</a>, <a href="https://github.com/andtheWings/andtheWings.github.io" target="_blank">Git/Github</a> and <a href="https://ghost.org/about/" target="_blank">Ghost</a> (<a href="https://github.com/axitkhurana/buster" target="_blank">Buster</a>) blogging framework.</li>
 							</ul>
 				       
 				        </div>	

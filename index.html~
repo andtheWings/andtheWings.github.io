@@ -24,39 +24,7 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  Return to Top
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About Me</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#download">Download</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    
 
     <section class="intro">
         <div class="intro-body">
@@ -73,9 +41,9 @@
                     		</li>
                     		<li><a href="https://twitter.com/DanRiggins" class="btn btn-default btn-lg" target="_blank"> <span class="network-name">Twitter</span></a>
                     		</li>
-                    		<li><a href="http://danielriggins.com/cv/" class="btn btn-default btn-lg"> <span class="network-name">Curriculum Vitae</span></a>
+                    		<li><a href="http://danielriggins.com/cv/" class="btn btn-default btn-lg" target="_blank"> <span class="network-name">Curriculum Vitae</span></a>
                     		</li>
-                    		<li><a href="http://danielriggins/wiki/" class="btn btn-default btn-lg"><span class="network-name">Wiki</span></a>
+                    		<li><a href="http://danielriggins/wiki/" class="btn btn-default btn-lg" blank="_blank"><span class="network-name">Wiki</span></a>
                     		</li>
                 		</ul>
                     </div>
