@@ -23,14 +23,14 @@
 		        	<!--/photo-->
 
 		        	<div class="span margin-bottom-5">
-		        		<div class="name-text">&nbsp;&nbsp;Daniel Riggins</div>
+		        		<div class="name-text">&nbsp;&nbsp;<a href="http://danielriggins.com/" target="_blank">Daniel Riggins</a></div>
 		        		<div class="major-text">&nbsp;&nbsp;&nbsp;&nbsp;Microbiologist & Medical Student</div>						
 		        	</div>
 		        	<!--/name-->
 
 		        	<div class="span pull-right">
 						<div class="span">
-							<abbr rel="tooltip" data-original-title="Website"></abbr><a href="http://danielriggins.com/blog">My Blog</a><br>
+							<abbr rel="tooltip" data-original-title="Website"></abbr><a href="http://blog.danielriggins.com/" target="_blank">My Blog</a><br>
 							<abbr rel="tooltip" data-original-title="Phone"></abbr>202-615-3339<br>
 							<abbr rel="tooltip" data-original-title="Email"></abbr>rigginsda[at]gmail.com<br>
 							<div class="margin-top-5 margin-bottom-5">
@@ -39,10 +39,7 @@
 								<a href="https://alpha.app.net/thewings" target="_blank" rel="tooltip me" data-original-title="app.net"><img src="img/appnet.png" alt="app.net" width="20"/></a>&nbsp;
 								<a href="https://github.com/andtheWings" target="_blank" rel="tooltip me" data-original-title="Github"><img src="img/github.png" alt="Github" width="20"/></a>&nbsp;
 							</div>
-						</div>				
-
-						<a class="pdf" href="cv.pdf" target="_blank" rel="tooltip" data-original-title="Download as PDF"></a>	
-
+						</div>	
 		        	</div>
 		        	<!--/contacts-->
 
@@ -72,11 +69,12 @@
 
 						<div class="subject-name">Software and Programming Languages</div>
 							<ul>
-								<li>Genetics - Clone Manager</li>
-								<li>Visualization - <a href="http://biology.kenyon.edu/BMB/Jmol2010/Shiga2/index.html" target="_blank">JMol</a>
-								<li>Statistics - R and Python</li>
-								<li>Linux - Arch and Ubuntu</li>
-								<li>Web Development - <a href="http://www.codecademy.com/betaPro69547" target="_blank">HTML, CSS, Javascript/Node</a>, <a href="https://github.com/andtheWings/andtheWings.github.io" target="_blank">Git/Github</a> and <a href="https://ghost.org/about/" target="_blank">Ghost</a> (<a href="https://github.com/axitkhurana/buster" target="_blank">Buster</a>) blogging framework.</li>
+								<li>Clone Manager: Genetics</li>
+								<li>JMOL: Visualization of molecular structures (<a href="http://biology.kenyon.edu/BMB/Jmol2010/Shiga2/index.html" target="_blank">See an interactive tutorial I made about Shiga Toxin</a>)
+								<li>R: Statistical analysis and data visualization (<a href="http://danielriggins.com/cv/img/headache.plot.tiff" target="_blank">See a plot I generated from a headache log</a>)</li>
+								<li>Linux: Arch and Ubuntu</li>
+								<li>HTML, CSS, Javascript: Web development (<a href="http://www.codecademy.com/betaPro69547" target="_blank">See my progress on Codecademy lessons</a>)</li> 
+								<li>Git: Software development (<a href="https://github.com/andtheWings/andtheWings.github.io" target="_blank">See the source code for my website hosted on Github Pages</a>)</li>
 							</ul>
 				       
 				        </div>	
@@ -236,7 +234,7 @@
 		        	<div class="span section-body">
 			        	<ul>
 			        		<li>Riggins, D.P., Narvaez, M.J., Martinez, K.A., Harden, M.M., & Slonczewski J.L. (2013). <em>Escherichia coli</em> K-12 survives anaerobic exposure at pH 2 without RpoS, Gad, or hydrogenases, but shows sensitivity to autoclaved broth products. PLoS One, 8(3), e56796. doi: 10.1371/journal.pone.0056796</li>
-			        		<li>Noguchi, K., Riggins, D.P., Eldahan, K.C., Kitko, R.D., & Slonczewski, J.L. (2010). Hydrogenase-3 Contributes to Anaerobic Acid Resistance of <em>Escherichia coli</em>. PLoS One, 8(3), e56796. doi: 10.1371/journal.pone.0056796</li>
+			        		<li><a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0010132" target="_blank">Noguchi, K., Riggins, D.P., Eldahan, K.C., Kitko, R.D., & Slonczewski, J.L. (2010). Hydrogenase-3 Contributes to Anaerobic Acid Resistance of <em>Escherichia coli</em>. PLoS One, 8(3), e56796. doi: 10.1371/journal.pone.0056796</a></li>
 					</ul>	
 			        </div>
 			    </div>
@@ -263,7 +261,7 @@
 				        		<ul>
 				        			<li>HEOP members teach health lessons at homeless shelters in the Maryland suburbs of Washington D.C.</li>
 				        			<li>As a board member, I helped with administrative tasks such as recruiting, money management, and training. I also contributed to development of the organization <a href="http://heopdmv.wordpress.com/about/" target="_blank">web site</a>.</li>
-				        			<li>As a head teacher, I led a group of 5 teachers who visited Carroll House in Silver Spring, MD on a biwekly basis. I coordinated scheduling, wrote/edited content, and assigned responsibilities for each lesson.</li>
+				        			<li>As a head teacher, I led a group of 5 teachers who visited Carroll House in Silver Spring, MD on a biweekly basis. I coordinated scheduling, wrote/edited <a href="http://danielriggins.com/cv/img/menshealth.pdf" target="_blank">content</a>, and assigned responsibilities for each lesson.</li>
 				        		</ul>
 				        			
 				        	</div>
@@ -282,8 +280,10 @@
 				        	<div class="margin-top-10">	
 				        		<ul>
 				        			<li>In the radiology department, I prepped people for scans and transported them to their rooms afterwards.</li>
-								<li>In the surgery department, I stocked operating rooms with supplies and transported patients to/from their procedures.</li>
-							</ul>
+									<li>In the surgery department, I stocked operating rooms with supplies and transported patients to/from their procedures.</li>
+									<li>See a <a href="http://www.cc.nih.gov/about/news/newsletter/2014/apr2014/newsletter.html#story1" target="blank">brief interview</a> with me in the Clinical Center Newsletter.
+								
+								</ul>
 				        	</div>
 				        </div>
 				        
