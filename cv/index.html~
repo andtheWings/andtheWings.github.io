@@ -200,8 +200,24 @@
 			        </div>
 	        		
 	        		<div class="span section-body">
-		        		
 		        		<div class="clearfix">
+			        		<div class="row">
+				        		<div class="span">
+				        			<div class="item-name">Medical Doctorate</div>
+				        			<div class="item-desc">Albert Einstein College of Medicine -- Bronx, NY</div>
+				        		</div>	
+				        		<div class="item-period pull-right span">2014 - Present</div>
+				        	</div>
+				        	<div class="margin-top-10">	
+				        		<ul>
+				        			<li>Jeffrey Schulman Memorial Scholar</li>
+							</ul>
+				        	</div>
+				        </div>
+		        		
+				        <div class="inner-seperator"></div>
+				        
+				        <div class="clearfix">
 			        		<div class="row">
 				        		<div class="span">
 				        			<div class="item-name">B.A. in Molecular Biology</div>
@@ -217,22 +233,6 @@
 									<li>Captained Division III cross-country team.</li>
 									<li>Placed on Dean's Merit List.</li> 
 								</ul>
-				        	</div>
-				        </div>
-				        <div class="inner-seperator"></div>
-				        
-				        <div class="clearfix">
-			        		<div class="row">
-				        		<div class="span">
-				        			<div class="item-name">Medical Doctorate</div>
-				        			<div class="item-desc">Albert Einstein College of Medicine -- Bronx, NY</div>
-				        		</div>	
-				        		<div class="item-period pull-right span">2014 - Present</div>
-				        	</div>
-				        	<div class="margin-top-10">	
-				        		<ul>
-				        			<li>Jeffrey Schulman Memorial Scholar</li>
-							</ul>
 				        	</div>
 				        </div>
 				</div>
