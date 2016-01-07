@@ -1,0 +1,46 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	background-color: #ffffff;
+	color: #000000;
+	font-family: sans-serif;
+	font-size: 12px;
+}
+
+div.region {
+	position: absolute;
+	padding: 0px;
+	background-color: #ffffff;
+	color: #000000;
+	overflow: auto;
+	font-size: 14px;
+}
+
+div#navbar {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 5%;
+}
+
+div#molecule  {
+	top: 5%;
+	left: 0px;
+	width: 60%;
+	height: 95%;
+	float: left
+}
+
+div#text {
+	top: 5%;
+	left: 61%;
+	width: 39%;
+	height: 95%;
+}

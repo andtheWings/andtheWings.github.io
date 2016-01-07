@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+  <head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <!-- 
+	-template modified from one provided by David Marcey and molvisions <http://www.molvisions.com/>	-helpful tips provided by David Marcey, Tim Driscoll, Angel Herraez, and Bob Hanson (on the Jmol Discussion list)-->
+    <title>Catabolite Activator Protein</title>
+    <style>
+	html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	background-color: #ffffff;
+	color: #000000;
+	font-family: sans-serif;
+	font-size: 12px;
+}
+
+div.region {
+	position: absolute;
+	padding: 0px;
+	background-color: #ffffff;
+	color: #000000;
+	overflow: auto;
+	font-size: 14px;
+}
+
+div#navbar {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 5%;
+}
+
+div#molecule  {
+	top: 5%;
+	left: 0px;
+	width: 60%;
+	height: 95%;
+	float: left
+}
+
+div#text {
+	top: 5%;
+	left: 61%;
+	width: 39%;
+	height: 95%;
+}
+	</style>
+	<script language="JavaScript" type="text/javascript" src="../jsmol/JSmol.min.js"></script>
+    <script language="JavaScript">
+var loadScript = "zap; load 3gap.pdb; set specular on; moveTo 0 537 651 -537 113.9 120; set spin y 20; spin on; select all; labels off; restrict not water; spacefill on; color cpk; backbone off; ribbons off; cartoons off; wireframe off;";
+var Info = {
+  width: 300, //"100%",
+  height: 300, //"100%",
+  script: loadScript,
+  serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/jsmol.php ",
+  use: "HTML5 WEBGL",
+  j2sPath: "../jsmol/j2s",
+  isSigned: false,             // Java only
+  jarFile: "JmolApplet.jar",  // Java only
+  jarPath: "../jsmol/java",                // Java only
+  memoryLimit: 512,            // Java only
+  console: "jmolApplet_infodiv"
+}
+function ResetProteinButton()
+{
+  Jmol.jmolButton(myJmol, loadScript, "Reset Protein");
+}
+
+function ResetComplexButton()
+{
+  Jmol.jmolButton(myJmol, "zap; load 1cgp.pdb; moveTo 0 -205 -705 679 170.2 135; set spin y 20; spin on; select all; labels off; set specular on; wireframe off; color cpk; backbone off; ribbons off; cartoons off; spacefill on;","Reset Complex");
+}
+</script> <link href="tutorials.css" rel="stylesheet"
+      type="text/css">
+  </head>
+  <body link="#0000ff">
+    <form name="baseForm" id="baseForm" action="" method="get">
+      <div id="navbar" class="region"><font
+          size="3"><strong><a href="http://biology.kenyon.edu/BMB/chime.htm">Biomolecules
+              at Kenyon</a> &nbsp;<a href="http://biology.kenyon.edu/HHMI/index.htm">HHMI
+              at Kenyon</a> &nbsp;<a href="http://jmol.sourceforge.net/">Jmol
+              Home</a> &nbsp;<a href="http://biology.kenyon.edu/welcome.htm">Biology
+              Dept</a> &nbsp;<a href="mailto:slonczewski@kenyon.edu">COMMENTS
+              and CORRECTIONS</a></strong></font></div>
+      <div id="molecule" class="region">
+        <script language="JavaScript" type="text/javascript">
+var frameWidth, frameHeight
+if (this.innerWidth) { frameWidth=this.innerWidth; frameHeight=this.innerHeight }
+else // IE
+{	
+	frameWidth = document.body.clientWidth
+	frameHeight = document.body.clientHeight
+}
+var appletSize = Math.min(frameWidth,frameHeight)
+Info.width = appletSize;
+Info.height = appletSize;
+myJmol = Jmol.getApplet("myJmol", Info);
+</script></div>
+      <div id="text" class="region">
+        <center>
+          <h2> <strong><a name="top" id="top"></a><i>E. coli </i>Catabolite
+              Activator Protein<br>
+            </strong><strong><font color="#660099" size="3"><br>
+                Marla Fiorelli '99 and Daniel Barich '05</font></strong> </h2>
+        </center>
+        <p> </p>
+        <hr>
+        <h3> Contents:</h3>
+        <ul>
+          <strong><a href="#INTRODUCTION">I. Introduction</a></strong> <br>
+          <strong><a href="#STRUCTURE">II. General Structure</a></strong> <br>
+          <strong><a href="#CAMP">III. cAMP Binding</a></strong> <br>
+          <strong><a href="#DNA">IV. DNA Binding</a></strong> <br>
+          <strong><a href="#ACTIVATION">V. Activating Regions</a></strong> <br>
+          <strong><a href="#REFERENCES">VI. References</a></strong>
+        </ul>
+        <hr>
+        <p><a name="INTRODUCTION"></a> </p>
+        <h3> <strong>I. Introduction</strong></h3>
+        <strong>The <i>Escherichia coli </i>catabolite gene activator protein
+          (CAP) is a DNA binding protein involved with the transcription of
+          several genes, including those that code for enzymes involved in the
+          metabolism of certain sugars (<i>i.e.</i> lactose, maltose, and
+          arabinose.) Basically, CAP is responsible for the global regulation of
+          carbon utilization. Upon binding cAMP (adenosine 3', 5' monophosphate,
+          or cyclic AMP), CAP binds to a conserved DNA sequence from which it
+          can either activate or repress transcription initiation from various
+          promoters. In some cases clusters of several promoters are all
+          controlled by a single cAMP-CAP complex bound to the DNA.</strong>
+        <p><strong>Once CAP has bound cAMP, the protein exhibits a higher
+            affinity for a specific conserved DNA sequence. When the
+            intracellular level of cAMP increases, the second messenger is bound
+            by CAP and the cAMP-CAP complex binds to the DNA. Once bound, it is
+            able to stimulate the transcription of the aforementioned genes. DNA
+            bound by the CAP-cAMP complex is bent by ~90 degrees. This DNA bend,
+            coupled with a protein-protein interaction between CAP and RNA
+            polymerase is thought to be the mechanism by which CAP regluates
+            transcription initiation on the chromosome.&nbsp;</strong> </p>
+        <hr><a name="STRUCTURE"></a>
+        <h3> <strong>II. General Structure</strong></h3>
+        <script language="JavaScript">ResetProteinButton();</script>
+        <p><strong>CAP is a dimer of 22, 500 molecular weight, composed of two
+            chemically identical polypeptide chains each 209 amino acids in
+            length.
+            <script language="JavaScript">
+  Jmol.jmolButton(myJmol, "select all; labels off; spacefill off; color cpk; wireframe off; ribbons off; cartoons off; backbone on; select protein; backbone off; cartoons on; select *a; color blue; select *b; color magenta;","");
+</script> The overall structure of the dimer is assymetric; one subunit adopts a
+            <font color="#0000FF">"closed" </font>conformation in which the
+            amino- and carboxy-termini are closer together than in the more <font
+              color="#CC00FF">"open" </font>subunit. Each subunit is composed
+            of two distinct domains connected by a <font color="#FF0000">hinge
+              region</font>.
+            <script language="JavaScript">
+  Jmol.jmolButton(myJmol, "select all; labels off; spacefill off; color cpk; wireframe off; ribbons off; cartoons off; backbone on; select protein; backbone off; cartoons on; color blue; select cmp; backbone off; wireframe 0.6; color lawngreen; select atomno=1652 or atomno=3325; label cAMP; font label 31; select 130-139; color red; select 140-209; color yellow;", "");
+</script>The <font color="#0000FF">N-terminal domain </font>is responsible for
+            dimerization and <span style="color: #00FF00; background-color: #000000;">cAMP
+              </span>binding. The <span style="color: #FFFF00; background-color: #000000;">carboxy-terminal</span>
+            domain contains a <font color="#CC00FF">helix-turn helix </font>DNA
+            binding motif,
+            <script language="JavaScript">
+  Jmol.jmolButton(myJmol, "select all; labels off; spacefill off; color cpk; wireframe off; ribbons off; cartoons off; backbone on; select 1-129; color blue; backbone off; cartoons on; select 130-139; color red; select 140-209; color yellow; select 166-193; color magenta; backbone off; cartoons on; select cmp; color lawngreen; backbone off; wireframe 0.6;","");
+</script>and is also responsible for DNA bending.&nbsp;</strong></p>
+        <hr><a name="CAMP"></a>
+        <h3> <strong>III. cAMP Binding</strong></h3>
+        <script language="JavaScript">ResetProteinButton();</script>
+        <p><strong>An important recognition site for cAMP within CAP is the
+            ionic bond formed between the side chain of <font color="#0000FF">Arg-82</font>
+            <script language="JavaScript">
+  Jmol.jmolButton(myJmol, "select all; labels off; spacefill off; color cpk; ribbons off; cartoons off; wireframe off; backbone on; select cmp; backbone off; wireframe 0.6; select 82; color blue; backbone off; wireframe 0.6; move 0 0 0 60 0 0 0 0 2.5; move 0 0 0 0 0 0 0 0 1; move 0 0 0 -60 0 0 0 0 2.5;","")
+</script> and the negatively charged <font color="#FFA500">phosphate </font>group
+            of cAMP. In the crystal structure, the two cAMP molecules are buried
+            deep within the <font color="#CC00FF">beta roll</font> and the <span
+              style="color: #00FFFF; background-color:#000000;">C-helix</span>.
+            <script language="JavaScript">
+  Jmol.jmolButton(myJmol, "select all; labels off; spacefill off; color cpk; ribbons off; cartoons off; wireframe off; backbone on; select 108-131; backbone off; ribbons on; color cyan; select sheet and 19-100; backbone off; ribbons on; color magenta; select 70-100; color magenta; backbone off; select cmp; color lawngreen; backbone off; wireframe 0.6;","");
+</script> It is unclear how cAMP enters or leaves the binding site, but this
+            probably requires the separation of the two subunits of the dimer,
+            or the movement of the beta roll and the C helix away from each
+            other. Other side-chain interactions between the protein and cAMP
+            are hydrogen bonds occuring at <span style="color: #FFFF00; background-color: #000000;">Thr-127,
+              Ser-128, Ser-83</span>, and <span style="color: #FFFF00; background-color: #000000;">Glu-72</span>.
+            <script language="JavaScript">
+  Jmol.jmolButton(myJmol, "select all; labels off; spacefill off; color cpk; ribbons off; cartoons off; wireframe off; backbone on; select 82; color blue; backbone off; wireframe 1; select cmp; color lawngreen; backbone off; wireframe 0.6; select 127, 128, 83, 72; color yellow; backbone off; wireframe 0.6;","");
+</script>Additional hydrogen bonding between is seen between cAMP and the
+            polypeptide backbone at residues <font color="#FF0000">83</font>
+            and <font color="#FF0000">71</font>
+            <script language="JavaScript">
+  Jmol.jmolButton(myJmol, "select all; labels off; spacefill off; color cpk; ribbons off; cartoons off; wireframe off; backbone on; select cmp; backbone off; wireframe 0.6; select 82; color blue; backbone off; wireframe 1; select 108-131; color cyan; backbone off; ribbons on; select 70-100; color magenta; backbone off; select cmp; color lawngreen; select protein; ribbons off; backbone on; color cpk; select 127, 128, 83, 72; color yellow; backbone off; wireframe 0.6; select 83, 71; color red; backbone off; wireframe 0.6;","");
+</script></strong></p><strong>
+          <hr><a name="DNA"></a>
+          <h3> <strong>IV. DNA Binding</strong></h3>
+          <script language="JavaScript">ResetComplexButton();</script>
+          <p><strong>Once CAP has bound cAMP, it is ready to bind to the <a href="javascript:Jmol.script(myJmol, 'zap; load 1cgp.pdb; moveTo 0 -205 -705 679 170.2 135; set spin y 20; spin on; select all; labels off; set specular on; spacefill off; color cpk; backbone off; ribbons off; cartoons off; wireframe on;')">DNA</a>.
+              Binding occurs at the conserved sequence of
+              5'-AAATGTAGATCACATTT-3'
+              <script language="JavaScript">
+  Jmol.jmolButton(myJmol, "zoom 135; translate y 0; select all; labels off; spacefill off; color cpk; backbone off; ribbons off; cartoons off; wireframe on; select cmp; wireframe 0.6; color lawngreen; select a; wireframe 0.6; color lawngreen; select t; color orange; wireframe 0.6; select g; color yellow; wireframe 0.44; select c; color red; wireframe 0.6;","");
+</script>Hydrogen bonds between the protein and the DNA phsophates occur at the
+              backbone amide of <span style="color: #00FFFF; background-color:#000000;">residue
+                139</span>, and the side chains of <span style="color: #00FFFF; background-color:#000000;">Thr-140,
+                Ser-179,</span> and <span style="color: #00FFFF; background-color:#000000;">Thr-182</span>
+              <script language="JavaScript">
+  Jmol.jmolButton(myJmol, "zoom 135; translate y 0; select all; labels off; hbonds off; spacefill off; color cpk; ribbons off; cartoons off; wireframe off; backbone on; select cmp; backbone off; wireframe 0.6; color lawngreen; select dna; backbone off; wireframe on; select a; backbone off; wireframe 0.6; color lawngreen; select t; color orange; backbone off; wireframe 0.6; select g; color yellow; backbone off; wireframe 0.44; select c; color lawngreen; backbone off; wireframe 0.6; select 139, 140, 179, 182; color cyan; spacefill on; hbonds on; spin off; move 0 0 0 60 0 25 0 0 2.5; spin on;", "");
+</script>In addition to these phosphate interactions, the side chains of <font
+                color="#0000FF">Glu-181</font> and <font color="#0000FF">Arg-185</font>,
+              both emanating from the <span style="color: #FFFF00; background-color: #000000;">recognition
+                helix</span>
+              <script language="JavaScript">
+  Jmol.jmolButton(myJmol, "zoom 195; translate y 25; select all; labels off; hbonds off; spacefill off; color cpk; ribbons off; cartoons off; wireframe off; backbone on; select dna; backbone off; wireframe on; select 4, 5, 27, 28; backbone off; wireframe 0.6; hbonds on; select 177-193; backbone off; ribbons on; color yellow; select atomno=1644 or atomno=3587; label Recognition Helix; font label 31; select 181, 185; color blue; backbone off; wireframe 0.6;","");
+</script>directly contact the bases within the major groove of the DNA. Because
+              of the way that the protein binds to the DNA, a kink of ~40
+              degrees occurs between nucleotide base pairs <span style="color: #FFFF00; background-color: #000000;">six</span>
+              and <font color="#FF0000">seven</font> on each side of the dyad
+              axis, 5'-<span style="color: #FFFF00; background-color: #000000;">T</span><font
+                color="#FF0000">G</font>-3'
+              <script language="JavaScript">
+  Jmol.jmolButton(myJmol, "zoom 195; translate y 25; select all; labels off; hbonds off; spacefill off; color cpk; ribbons off; cartoons off; wireframe off; backbone on; select 177-193; color yellow; backbone off; ribbons on; select 181, 185; color blue; backbone off; wireframe 0.6; select dna; backbone off; wireframe on; select dna and (4, 5, 27, 28); backbone off; spacefill on; hbonds on;", "");
+</script>This sequence has been shown to favor DNA flexibility and bending in
+              other systems as well. Because of this kink, an additional five
+              ionic interactions and four hydrogen bonds are able to occur
+              between the protein and the DNA strand. Examples of these new
+              interactions occur between <font color="#CC00FF">Lys-26,
+                Lys-166, His-199</font> and the DNA sugar-phosphate backbone
+              <script language="JavaScript">
+  Jmol.jmolButton(myJmol, "zoom 195; translate y 25; select all; labels off; hbonds off; spacefill off; color cpk; backbone on; ribbons off; cartoons off; wireframe off; select dna; wireframe on; backbone off; select 26, 166, 199; color magenta; wireframe 0.8; backbone off; select t; wireframe on; backbone off;","");
+</script>The DNA bend is integral to the mechanism of transcription activation.
+              Not only does it place CAP in the proper orientation for
+              interaction with RNA polymerase, but wrapping the DNA around the
+              protein may result in direct contacts between upstream DNA and RNA
+              polymerase.&nbsp;</strong></p>
+          <hr><a name="ACTIVATION"></a>
+          <h3> <strong>V. Activating Regions</strong></h3>
+          <script language="JavaScript">ResetComplexButton();</script>
+          <p><strong>Transcription activation by CAP requires more than merely
+              the binding of cAMP and binding and bending of DNA. CAP contains
+              an "activating region" that has been proposed to participate in
+              direct protein-protein interactions with RNA polymerase and/or
+              other basal transcription factors. Specifically, amino acids <font
+                color="#0000FF">156</font>, <font color="#FFA500">158</font>,<font
+                color="#FF0000"> 159</font>, and <span style="color: #FFFF00; background-color: #000000;">162</span>
+              <script language="JavaScript">
+  Jmol.jmolButton(myJmol, "zoom 195; translate y 25; select all; labels off; hbonds off; spacefill off; color cpk; backbone on; ribbons off; cartoons off; wireframe off; select dna; wireframe 0.04; backbone off; select protein; backbone 100; select cmp; wireframe 0.6; backbone off; select 156; color blue; spacefill; backbone off; select 158; spacefill; backbone off; color orange; select 159; spacefill; backbone off; color red; select 162; spacefill; backbone off; color yellow;","");
+</script>have been proposed to be critical for transcription activation by CAP.
+              These amino acids are part of a surface loop composed of residues
+              152-166
+              <script language="JavaScript">
+  Jmol.jmolButton(myJmol, "zoom 195; translate y 25; select all; labels off; hbonds off; spacefill off; color cpk; backbone on; ribbons off; cartoons off; wireframe off; select dna; wireframe 0.04; backbone off; select 156, 158, 159, 162; wireframe 0.6; backbone off;","");
+</script>Researchers have concluded that the third and final step in
+              transcription activation is this direct protein-protein contact
+              between amino acids 156-162 of CAP, and RNA polymerase.</strong></p>
+          <br>
+          <hr><a name="REFERENCES"></a>
+          <h3> <strong>VI. References</strong></h3>
+          <strong><font size="-1">Gunasekera, Angelo, Yon W. Ebright, and
+              Richard H. Ebright. 1992. DNA Sequence Determinants for Binding of
+              the <i>Escherichia coli</i> Catabolite Gene Activator Protein. <i>The
+                Journal of Biological Chemistry</i> 267:14713-14720.</font></strong>
+          <p><strong><font size="-1">Schultz, Steve C., George C. Shields, and
+                Thomas A. Steitz. 1991. Crystal Structure of a CAP-DNA complex:
+                The DNA Is Bent by 90 degrees <i>Science</i> 253: 1001-1007.</font></strong>
+          </p>
+          <p><strong><font size="-1">Vaney, Marie Christine, Gary L. Gilliland,
+                James G. Harman, Alan Peterkofsky, and Irene T. Weber. 1989.
+                Crystal Structure of a cAMP-Independent Form of Catabolite Gene
+                Activator Protein with Adenosine Substituted in One of Two
+                cAMP-Binding Sites. <i>Biochemistry</i> 28:4568-4574.</font></strong>
+          </p>
+          <p><strong><font size="-1">Weber, Irene T., Gary L. Gilliland, James
+                G. Harman, and Alan Peterkofsky. 1987. Crystal Structure of a
+                Cyclic AMP-independent Mutant of Catabolite Activator Protein. <i>The
+                  Journal of Biological Chemistry</i> 262:5630-5636.</font></strong>
+          </p>
+          <p><strong><font size="-1">Zhou, Yuhong, Ziaoping Zhang, and Richard
+                H. Ebright. 1993. Identification of the activating region of
+                catabolite gene activator protein (CAP): Isolation and
+                characterization of mutants of CAP specifically defective in
+                transcription activation. <i>Proceedings of the National
+                  Academy of Sciences of the United States of America</i>
+                90:6081-6085.</font></strong> </p>
+          <p><strong><a href="#top">Back to Top</a></strong></p>
+        </strong></div>
+      <strong> </strong></form>
+  </body>
+</html>
