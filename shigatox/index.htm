@@ -1,175 +1,171 @@
 <!DOCTYPE html>
 <html style="height: 100%">
-  <head>
-    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-    <!-- 
-	-template modified from one provided by David Marcey and molvisions <http://www.molvisions.com/>	-helpful tips provided by David Marcey, Tim Driscoll, Angel Herraez, and Bob Hanson (on the Jmol Discussion list)-->
-    <title>Shiga Toxin Type 2</title>
-    <style>
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <!---template modified from one provided by David Marcey and molvisions <http://www.molvisions.com/>	-helpful tips provided by David Marcey, Tim Driscoll, Angel Herraez, and Bob Hanson (on the Jmol Discussion list)-->
+  <title>Shiga Toxin Type 2</title>
+  <style>
 	html {
-	margin: 0;
-	padding: 0;
-}
-
-body {
-	top: 0px;
-	left: 0px;
-	margin: 0px;
-	padding: 0px;
-	background-color: #ffffff;
-	color: #000000;
-	font-family: sans-serif;
-	font-size: 12px;
-}
-
-div.region {
-	position: absolute;
-	padding: 0px;
-	background-color: #ffffff;
-	color: #000000;
-	overflow: auto;
-	font-size: 14px;
-}
-
-div#navbar {
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 5%;
-}
-
-div#molecule  {
-	top: 5%;
-	left: 0px;
-	width: 60%;
-	height: 95%;
-	float: left
-}
-
-div#text {
-	top: 5%;
-	left: 61%;
-	width: 39%;
-	height: 95%;
-}
-	</style>
-	<script language="JavaScript" type="text/javascript" src="../jsmol/JSmol.min.js"></script>
-    <script language="JavaScript">
-var loadScript = "zap; load 3gap.pdb; set specular on; moveTo 0 537 651 -537 113.9 120; set spin y 20; spin on; select all; labels off; restrict not water; spacefill on; color cpk; backbone off; ribbons off; cartoons off; wireframe off;";
-var Info = {
-  width: 300, //"100%",
-  height: 300, //"100%",
-  script: loadScript,
-  serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/jsmol.php ",
-  use: "HTML5 WEBGL",
-  j2sPath: "../jsmol/j2s",
-  isSigned: false,             // Java only
-  jarFile: "JmolApplet.jar",  // Java only
-  jarPath: "../jsmol/java",                // Java only
-  memoryLimit: 512,            // Java only
-  console: "jmolApplet_infodiv"
-}
-function ResetProteinButton()
-{
-  Jmol.jmolButton(myJmol, loadScript, "Reset Protein");
-}
-
-function ResetComplexButton()
-{
-  Jmol.jmolButton(myJmol, "zap; load 1cgp.pdb; moveTo 0 -205 -705 679 170.2 135; set spin y 20; spin on; select all; labels off; set specular on; wireframe off; color cpk; backbone off; ribbons off; cartoons off; spacefill on;","Reset Complex");
-}
-</script> <link href="tutorials.css" rel="stylesheet"
-
-      type="text/css">
-  </head>
-  <body link="#0000ff">
-    <form name="baseForm" id="baseForm" action="" method="get">
-      <div id="navbar" class="region"><font
-
-          size="3"><strong><a href="http://biology.kenyon.edu/BMB/chime.htm">Biomolecules
-              at Kenyon</a> &nbsp;<a href="http://biology.kenyon.edu/HHMI/index.htm">HHMI
-              at Kenyon</a> &nbsp;<a href="http://jmol.sourceforge.net/">Jmol
-              Home</a> &nbsp;<a href="http://biology.kenyon.edu/welcome.htm">Biology
-              Dept</a> &nbsp;<a href="mailto:slonczewski@kenyon.edu">COMMENTS
-              and CORRECTIONS</a></strong></font></div>
-      <div id="molecule" class="region">
-        <script language="JavaScript" type="text/javascript">
-var frameWidth, frameHeight
-if (this.innerWidth) { frameWidth=this.innerWidth; frameHeight=this.innerHeight }
-else // IE
-{	
-	frameWidth = document.body.clientWidth
-	frameHeight = document.body.clientHeight
-}
-var appletSize = Math.min(frameWidth,frameHeight)
-Info.width = appletSize;
-Info.height = appletSize;
-myJmol = Jmol.getApplet("myJmol", Info);
-</script></div>
-      <div id="text" class="region">
-        <center>
-          <h2> <strong><a name="top" id="top"></a><i>E. coli </i>Shiga Toxin Type 2<br>
-            </strong><strong><font color="#660099" size="3"><br>
-                Rachel Martin '11 and Daniel Riggins '12</font></strong> </h2>
-        </center>
-        <p> </p>
-        <hr>
-        <h3> Contents:</h3>
-        <ul>
-          <strong><a href="#INTRODUCTION">I. Introduction</a></strong> <br>
-          <strong><a href="#STRUCTURE">II. General Structure</a></strong> <br>
-          <strong><a href="#ADENINE">III. Adenine Binding</a></strong> <br>
-          <strong><a href="#ENTRY">IV. Mechanism of Entry into the Cell</a></strong> <br>
-          <strong><a href="#DIFFERENCES">V. Differences from Stx and Stx1</a></strong> <br>
-          <strong><a href="#REFERENCES">VI. References</a></strong>
-        </ul>
-        <hr>
-        <p><a name="INTRODUCTION"></a> </p>
-        <h3> <strong>I. Introduction</strong></h3>
-        <strong>The <i>Escherichia coli </i>catabolite gene activator protein
-          (CAP) is a DNA binding protein involved with the transcription of
-          several genes, including those that code for enzymes involved in the
-          metabolism of certain sugars (<i>i.e.</i> lactose, maltose, and
-          arabinose.) Basically, CAP is responsible for the global regulation of
-          carbon utilization. Upon binding cAMP (adenosine 3', 5' monophosphate,
-          or cyclic AMP), CAP binds to a conserved DNA sequence from which it
-          can either activate or repress transcription initiation from various
-          promoters. In some cases clusters of several promoters are all
-          controlled by a single cAMP-CAP complex bound to the DNA.</strong>
-        <p><strong>Once CAP has bound cAMP, the protein exhibits a higher
-            affinity for a specific conserved DNA sequence. When the
-            intracellular level of cAMP increases, the second messenger is bound
-            by CAP and the cAMP-CAP complex binds to the DNA. Once bound, it is
-            able to stimulate the transcription of the aforementioned genes. DNA
-            bound by the CAP-cAMP complex is bent by ~90 degrees. This DNA bend,
-            coupled with a protein-protein interaction between CAP and RNA
-            polymerase is thought to be the mechanism by which CAP regluates
-            transcription initiation on the chromosome.&nbsp;</strong> </p>
-        <hr><a name="STRUCTURE"></a>
+	  margin: 0;
+	  padding: 0;
+    }
+    body {
+	  top: 0px;
+	  left: 0px;
+	  margin: 0px;
+	  padding: 0px;
+	  background-color: #ffffff;
+	  color: #000000;
+	  font-family: sans-serif;
+	  font-size: 12px;
+    }
+    div.region {
+	  position: absolute;
+	  padding: 0px;
+	  background-color: #ffffff;
+	  color: #000000;
+	  overflow: auto;
+	  font-size: 14px;
+    }
+    div#navbar {
+	  top: 0px;
+	  left: 0px;
+	  width: 100%;
+	  height: 5%;
+    }
+    div#molecule  {
+	  top: 5%;
+	  left: 0px;
+	  width: 60%;
+	  height: 95%;
+	  float: left
+    }
+    div#text {
+	  top: 5%;
+	  left: 61%;
+	  width: 39%;
+	  height: 95%;
+    }
+  </style>
+  <script language="JavaScript" type="text/javascript" src="../jsmol/JSmol.min.js"></script>
+  <script language="JavaScript">
+    var loadScript = "zap; load 3gap.pdb; set specular on; moveTo 0 537 651 -537 113.9 120; set spin y 20; spin on; select all; labels off; restrict not water; spacefill on; color cpk; backbone off; ribbons off; cartoons off; wireframe off;";
+    var Info = {
+      width: 300, //"100%",
+      height: 300, //"100%",
+      script: loadScript,
+      serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/jsmol.php ",
+      use: "HTML5 WEBGL",
+      j2sPath: "../jsmol/j2s",
+      isSigned: false,             // Java only
+      jarFile: "JmolApplet.jar",  // Java only
+      jarPath: "../jsmol/java",                // Java only
+      memoryLimit: 512,            // Java only
+      console: "jmolApplet_infodiv"
+    }
+    function ResetProteinButton() {Jmol.jmolButton(myJmol, loadScript, "Reset Protein");
+    }
+    function ResetComplexButton() {
+      Jmol.jmolButton(myJmol, "zap; load 1cgp.pdb; moveTo 0 -205 -705 679 170.2 135; set spin y 20; spin on; select all; labels off; set specular on; wireframe off; color cpk; backbone off; ribbons off; cartoons off; spacefill on;","Reset Complex");
+    }
+  </script> 
+  <link href="tutorials.css" rel="stylesheet" type="text/css">
+</head>
+<body link="#0000ff">
+  <form name="baseForm" id="baseForm" action="" method="get">
+  <div id="navbar" class="region">
+    <font size="3">
+      <strong><a href="http://biology.kenyon.edu/BMB/chime.htm">Biomolecules at Kenyon</a> &nbsp;
+              <a href="http://biology.kenyon.edu/HHMI/index.htm">HHMI at Kenyon</a> &nbsp;
+              <a href="http://jmol.sourceforge.net/">Jmol Home</a> &nbsp;
+              <a href="http://biology.kenyon.edu/welcome.htm">Biology Dept</a> &nbsp;
+              <a href="mailto:slonczewski@kenyon.edu">COMMENTS and CORRECTIONS</a>
+      </strong>
+    </font>
+  </div>
+  <div id="molecule" class="region">
+    <script language="JavaScript" type="text/javascript">
+      var frameWidth, frameHeight
+        if (this.innerWidth) { frameWidth=this.innerWidth; frameHeight=this.innerHeight }
+        else // IE
+        {	
+	      frameWidth = document.body.clientWidth
+	      frameHeight = document.body.clientHeight
+        }
+      var appletSize = Math.min(frameWidth,frameHeight)
+        Info.width = appletSize;
+        Info.height = appletSize;
+        myJmol = Jmol.getApplet("myJmol", Info);
+    </script>
+  </div>
+  <div id="text" class="region">
+    <center><h2><strong><a name="top" id="top"></a><i>E. coli</i> Shiga Toxin Type 2<br>
+                 </strong><strong><font color="#660099" size="3"><br>
+                 Rachel Martin '11 and Daniel Riggins '12</font></strong> 
+            </h2>
+    </center>
+    </p>
+    <hr>
+      <h3> Contents:</h3>
+      <ul>
+        <a href="#INTRODUCTION">I. Introduction</a><br>
+        <a href="#STRUCTURE">II. General Structure</a><br>
+        <a href="#ADENINE">III. Adenine Binding</a><br>
+        <a href="#ENTRY">IV. Mechanism of Entry into the Cell</a><br>
+        <a href="#DIFFERENCES">V. Differences from Stx and Stx1</a><br>
+        <a href="#REFERENCES">VI. References</a></strong>
+      </ul>
+      <hr>
+      <p><a name="INTRODUCTION"></a> </p>
+        <h3><strong>I. Introduction</strong></h3>
+        Stx, or Shiga toxin, is a protein produced by the bacterium <i>Shigella dysenteriae</i>, and is named for Kiyoshi Shiga, who first discovered the microbes's role in dysentery<sup>[1]</sup>. A variation of this toxin, Stx2, is produced by <i>Escherichia coli</i> (most notably by strain O157:H7), and is one of the main sources of food poisoning<sup>[2]</sup>. Different strains of <i>E. coli</i> can also express Stx1, which causes milder illness than Stx2. Researchers are interested in how structural differences in these toxins affect virulence<sup>[3]</sup>. While Stx and Stx1 are nearly identical, the Stx2 protein structure contains some major alterations that seem to augment its pathological function.</p>
+        Shiga toxins bind to receptors on the outside of the cell and are taken up into the endoplasmic reticulum (ER)<sup>[4].</sup> Because the receptors are not found in agricultural animals like cattle and swine, these animals can harbor toxic bacteria with little consequence. When toxin expressing <i>E. coli</i> are ingested by humans, they quickly enter host cells<sup>[2]</sup>. Once inside, Stx toxins act as <i>N</i>-glycosidases, depurinating specific adenines in the 60S subunit of ribosomes. Cleavage of adenine bases leads to incapacitation of ribosomes and termination of protein synthesis<sup>[4]</sup>.</p>
+      <hr><a name="STRUCTURE"></a>
         <h3> <strong>II. General Structure</strong></h3>
         <script language="JavaScript">ResetProteinButton();</script>
-        <p><strong>CAP is a dimer of 22, 500 molecular weight, composed of two
-            chemically identical polypeptide chains each 209 amino acids in
-            length.
-            <script language="JavaScript">
-  Jmol.jmolButton(myJmol, "select all; labels off; spacefill off; color cpk; wireframe off; ribbons off; cartoons off; backbone on; select protein; backbone off; cartoons on; select *a; color blue; select *b; color magenta;","");
-</script> The overall structure of the dimer is assymetric; one subunit adopts a
-            <font color="#0000FF">"closed" </font>conformation in which the
-            amino- and carboxy-termini are closer together than in the more <font
-
-              color="#CC00FF">"open" </font>subunit. Each subunit is composed
-            of two distinct domains connected by a <font color="#FF0000">hinge
-              region</font>.
-            <script language="JavaScript">
-  Jmol.jmolButton(myJmol, "select all; labels off; spacefill off; color cpk; wireframe off; ribbons off; cartoons off; backbone on; select protein; backbone off; cartoons on; color blue; select cmp; backbone off; wireframe 0.6; color lawngreen; select atomno=1652 or atomno=3325; label cAMP; font label 31; select 130-139; color red; select 140-209; color yellow;", "");
-</script>The <font color="#0000FF">N-terminal domain </font>is responsible for
-            dimerization and <span style="color: #00FF00; background-color: #000000;">cAMP
-              </span>binding. The <span style="color: #FFFF00; background-color: #000000;">carboxy-terminal</span>
-            domain contains a <font color="#CC00FF">helix-turn helix </font>DNA
-            binding motif,
-            <script language="JavaScript">
-  Jmol.jmolButton(myJmol, "select all; labels off; spacefill off; color cpk; wireframe off; ribbons off; cartoons off; backbone on; select 1-129; color blue; backbone off; cartoons on; select 130-139; color red; select 140-209; color yellow; select 166-193; color magenta; backbone off; cartoons on; select cmp; color lawngreen; backbone off; wireframe 0.6;","");
-</script>and is also responsible for DNA bending.&nbsp;</strong></p>
+        <p>Like other members of its toxin family, Stx2 is made up of one <span style="color: rgb(255, 0, 0);">alpha subunit</span> and five <span style="color: rgb(0, 0, 153);">beta subunits</span>. <script language="JavaScript">jmolButton("select all; labels off; spacefill off; color cpk; backbone off; ribbons off; cartoons on; wireframe off; select *a; color red; select atomno=190; label Alpha; font label 31; select *b, *c, *d, *e, *f; color blue; select atomno=2353; label Beta; font label 31; spin on;","");</script> The <span style="color: rgb(255, 0, 0);">alpha subunit</span> contains the <span style="color: rgb(56, 234, 138);">catalytic site</span> that cleaves <span style="color: rgb(204, 51, 204);">adenine</span> from the ribosome. <script language="JavaScript">jmolButton("select all; labels off; spacefill off; color cpk; backbone off; ribbons off; cartoons on; wireframe off; select *a; color red; select *b, *c, *d, *e, *f; color blue; spin off; moveto /* time, axisAngle */ 1.0 { -26 -914 -404 155.2} /* zoom, translation */ 182.5 -10.0 20.0 /* center, rotationRadius */ {8.417001 49.8325 5.140999} 49.747337 /* navigation center, translation, depth */ {0.0 0.0 0.0} -11.853653 92.764435 0.0; select ade; wireframe 30; spacefill 75; color magenta; spin off; delay 1; select arg170, val78, ser112, val162, ala166, tyr77, tyr 114; color mediumspringgreen; cartoon off; wireframe; delay .1; wireframe 30; spacefill 30; delay .1; spacefill 50; delay .1; spacefill 75; delay .1; spacefill 100; delay .1; spacefill 125; delay .1; spacefill 150; delay .1; spacefill 175; delay .1; spacefill 200; delay .1; spacefill 225; delay .1; spacefill 250; delay .1; spacefill 275; delay .1; spacefill 300; delay .1; spacefill 325; delay .1; spacefill 350; delay .1; spacefill 375; delay .1; spacefill 400; delay .1; spacefill; delay 1; moveto /* time, axisAngle */ 1.0 { -253 -923 -290 106.38} /* zoom, translation */ 277.57 -1.86 30.0 /* center, rotationRadius */ {8.417001 49.8325 5.140999} 49.747337 /* navigation center, translation, depth */ {0.0 0.0 0.0} -61.604683 140.31186 0.0; select *b, *c, *d, *e, *f; cartoon off;","");</script> The <span style="color: rgb(0, 0, 153);">pentameric ring</span> formed by the beta subunits binds to the membranes of target cells. All stx toxins preferentially bind to glycosphingolipids via fifteen active sites (three per <span style="color: rgb(2, 115, 207);">beta monomer</span>)<sup>[5]</sup>. <script language="JavaScript"> jmolButton("display protein, ade; select all; labels off; spacefill off; color cpk; backbone off; ribbons off; cartoons on; wireframe off; select *a; color red; select *b, *c, *d, *e, *f; color blue; select ade; wireframe 30; spacefill 75; color magenta; select arg170, val78, ser112, val162, ala166, tyr77, tyr 114; color mediumspringgreen; cartoon off; spacefill; spin off; moveto /* time, axisAngle */ 1.0 { -450 -891 -54 100.62} /* zoom, translation */ 138.0 -1.93 0.0 /* center, rotationRadius */ {8.417001 49.8325 5.140999} 49.747337 /* navigation center, translation, depth */ {0.0 0.0 0.0} -35.68257 63.773823 0.0; delay 1; select *b; color cyan; select atomno=2425; label One; font label 31; set labeloffset 5 -5; delay 0.5; select *b; color blue; select *c; color cyan; select atomno=2785; label Two; font label 31; delay 0.5; select *c; color blue; select *d; color cyan; select atomno=3793; label Three; font label 31; delay 0.5; select *d; color blue; select *e; color cyan; select atomno=3885; label Four; font label 31; set labeloffset 0 -5; delay 0.5; select *e; color blue; select *f; color cyan; select atomno=4878; label Five; font label 31; set labeloffset 0 -10; delay 0.5; select *f; color blue;","");</script></p>
+        <p>The carboxy-terminal portion (<span style="color: rgb(255, 102, 102);">A2</span>)
+of the <span style="color: rgb(255, 0, 0);">alpha
+subunit</span> links it to the
+pentameric
+ring by extending through its center
+pore. &nbsp;<span style="color: rgb(255, 102, 102);">A2</span>
+traverses through it starting as an alpha helix,
+then in an extended conformation. &nbsp;<span
+ style="color: rgb(255, 102, 102);">A2</span>
+ends as a terminal helix that projects
+out of the <span style="color: rgb(0, 0, 153);">B-pentamer</span>
+at 30 degrees {5}.&nbsp;
+  <script language="JavaScript">
+jmolButton("labels off; spacefill off; color cpk; backbone off; ribbons off; cartoons on; wireframe off; select *a; color red; select *b, *c, *d, *e, *f; cartoon on; color blue;select arg170, val78, ser112, val162, ala166, tyr77, tyr 114; color mediumspringgreen; spacefill; cartoon off; select ade; wireframe 30; spacefill 75; color magenta; spin off; moveto /* time, axisAngle */ 1.0 { 341 -874 -347 145.98} /* zoom, translation */ 138.0 -1.86 0.0 /* center, rotationRadius */ {8.417001 49.8325 5.140999} 49.747337 /* navigation center, translation, depth */ {0.0 0.0 0.0} 30.828058 28.93337 0.0; hide *b, *c, *d, *e, *f; select *a; select atomno>1905 and atomno<2225; color indianred; delay 0.25; color red; delay 0.25; color indianred; delay 0.25; color red; delay 0.25; color indianred; delay 0.5; select atomno=270; label One; font label 31; select atomno=2124; label Two; font label 31;","");
+  </script>&nbsp;
+  </strong><strong></strong></p>
+  <p><strong><span style="color: rgb(255, 0, 0);">A1</span>
+is
+linked to <span style="color: rgb(255, 102, 102);">A2</span>
+via the polypeptide chain and a <span style="color: rgb(102, 0, 204);">disulfide
+bond</span> </strong><strong>between
+the <span
+ style="color: rgb(255, 255, 51); background-color: rgb(0, 0, 0);">sulphur
+atoms</span> of
+cysteine&nbsp;241 and cysteine&nbsp;260</strong><strong>.&nbsp;
+  <script language="JavaScript">
+jmolButton("select all; labels off; spacefill off; color cpk; backbone off; ribbons off; cartoons on; wireframe off; select *a; color red; select *b, *c, *d, *e, *f; color blue;select arg170, val78, ser112, val162, ala166, tyr77, tyr 114; color mediumspringgreen; spacefill; cartoon off; select ade; wireframe 30; spacefill 75; color magenta; spin off; select atomno>1905 and atomno<2225; color indianred; moveto /* time, axisAngle */ 1.0 { 566 -716 -408 131.43} /* zoom, translation */ 209.88 0.07 25.07 /* center, rotationRadius */ {8.417001 49.8325 5.140999} 49.747337 /* navigation center, translation, depth */ {0.0 0.0 0.0} 40.00118 27.544077 0.0; select cys 241, cys 260; color cpk; wireframe 40; color ssbonds purple;","");
+  </script>&nbsp;
+  </strong><strong>In
+vivo, <span style="color: rgb(255, 0, 0);">A1</span>
+separates from the rest of the toxin by nicking the
+polypeptide chain and reducing a disulfide bond. &nbsp;This
+structure shows the polypeptide
+chain already broken.&nbsp;
+Henceforth after breaking, <span style="color: rgb(255, 0, 0);">A1</span>
+is active as an N-glycosidase. Unlike in the structure of Stx,
+the
+active site is accessible to small molecules before <span
+ style="color: rgb(255, 0, 0);">A1</span>
+parts from <span style="color: rgb(255, 102, 102);">A2</span>
+{5}.<br>
+  </strong></p>
         <hr><a name="ADENINE"></a>
         <h3> <strong>III. cAM</strong></h3>
         <script language="JavaScript">ResetProteinButton();</script>
