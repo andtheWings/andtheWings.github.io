@@ -122,6 +122,8 @@ Error message and password prompt
 
 <li>$:/config/DefaultSidebarTab</li>
 
+<li>$:/config/RelinkOnRename</li>
+
 <li>$:/config/WikiParserRules/Inline/wikilink</li>
 
 <li>$:/core</li>
@@ -162,6 +164,8 @@ Error message and password prompt
 
 <li>$:/state/toc/TableOfContents-Time Management-497309061</li>
 
+<li>$:/state/toc/TableOfContents/Pediatrics-Neonatal Jaundice--81657105</li>
+
 <li>$:/state/toc/TableOfContents/Pediatrics-Newborn Management--81657105</li>
 
 <li>$:/state/toc/TableOfContents/Pediatrics-Newborn Vomiting--81657105</li>
@@ -194,11 +198,17 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla/settings/backgroundimage</li>
 
+<li>3 D's</li>
+
 <li>About this Notebook</li>
 
 <li>Annular Pancreas</li>
 
 <li>APGAR</li>
+
+<li>Bilirubin</li>
+
+<li>Breast Jaundices</li>
 
 <li>Bronchopulmonary Dysplasia</li>
 
@@ -224,11 +234,15 @@ Error message and password prompt
 
 <li>Intraventricular Hemorrhage</li>
 
+<li>Kernicterus</li>
+
 <li>Meconium Ileus</li>
 
 <li>Menses History</li>
 
 <li>Necrotizing Enterocolitis</li>
+
+<li>Neonatal Jaundice</li>
 
 <li>Neonatal Resuscitation</li>
 
@@ -270,6 +284,8 @@ Error message and password prompt
 
 <li>Turner Syndrome</li>
 
+<li>Typical Day on the Floors</li>
+
 <li>Urgent and Important</li>
 
 <li>VACTERL association</li>
@@ -290,6 +306,9 @@ Error message and password prompt
 <div id="storeArea" style="display:none;">
 <div created="20180202221612077" modified="20180209214401757" title="$:/config/DefaultSidebarTab">
 <pre>TableOfContents</pre>
+</div>
+<div created="20180214184347782" modified="20180214184347782" title="$:/config/RelinkOnRename">
+<pre>yes</pre>
 </div>
 <div created="20180202213702743" modified="20180202213702743" title="$:/config/WikiParserRules/Inline/wikilink">
 <pre>disable</pre>
@@ -8564,7 +8583,7 @@ Error message and password prompt
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[TableOfContents]]</pre>
+# [[hyperbilirubinemia]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -8686,7 +8705,7 @@ very-muted-foreground: #888888</pre>
 <div created="20180209213841454" modified="20180209213841454" title="$:/state/ShowPaletteEditor">
 <pre>yes</pre>
 </div>
-<div created="20180202222259727" modified="20180212150535734" title="$:/state/sidebar">
+<div created="20180202222259727" modified="20180214191249816" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20180201161714314" modified="20180209213626190" title="$:/state/tab--1963855381">
@@ -8698,7 +8717,7 @@ very-muted-foreground: #888888</pre>
 <div created="20180201164132957" modified="20180201164351175" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/TiddlySpot</pre>
 </div>
-<div created="20180201162436265" modified="20180209214338974" title="$:/state/tab/sidebar--1835078512">
+<div created="20180201162436265" modified="20180214184422397" title="$:/state/tab/sidebar--1835078512">
 <pre>TableOfContents</pre>
 </div>
 <div created="20180209213701349" modified="20180209213703013" title="$:/state/tag-manager/TableOfContents">
@@ -8715,6 +8734,9 @@ very-muted-foreground: #888888</pre>
 </div>
 <div created="20180209212954549" modified="20180209212954549" title="$:/state/toc/TableOfContents-Time Management-497309061">
 <pre>open</pre>
+</div>
+<div created="20180214192917742" modified="20180214193023276" title="$:/state/toc/TableOfContents/Pediatrics-Neonatal Jaundice--81657105">
+<pre>close</pre>
 </div>
 <div created="20180209214233810" modified="20180212044116035" title="$:/state/toc/TableOfContents/Pediatrics-Newborn Management--81657105">
 <pre>close</pre>
@@ -8734,7 +8756,7 @@ very-muted-foreground: #888888</pre>
 <div created="20180212145040290" modified="20180212150341440" title="$:/state/toc/TableOfContents/Pediatrics/Slow Colon-Failure to Pass Meconium--81657105">
 <pre>open</pre>
 </div>
-<div list="[[About this Notebook]]" title="$:/StoryList">
+<div list="[[Breast Jaundices]] [[About this Notebook]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -8783,7 +8805,7 @@ very-muted-foreground: #888888</pre>
     }
 }</pre>
 </div>
-<div created="20180201161954040" modified="20180202222332599" title="$:/temp/search">
+<div created="20180201161954040" modified="20180214180847013" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20180201161734085" modified="20180201161734085" title="$:/theme">
@@ -8910,12 +8932,21 @@ very-muted-foreground: #888888</pre>
 <div created="20180201161746710" modified="20180201161953071" title="$:/themes/tiddlywiki/vanilla/settings/backgroundimage">
 <pre>gplaypattern.png</pre>
 </div>
-<div bag="default" created="20150202232557981" modified="20180202222219593" revision="0" tags="" title="About this Notebook" tmap.id="4a79aca5-2599-44d4-b2a8-81d3aea3ff89" type="text/vnd.tiddlywiki">
+<div created="20180214173347361" modified="20180214173507241" tags="[[Time Management]]" title="3 D's">
+<pre>Means of prioritizing your top priority work:
+
+# Dying - issues related to acute patient safety
+# Diagnosis - issues relating to identifying the pathology
+# Discharge - getting patients out in a timely manner</pre>
+</div>
+<div bag="default" created="20150202232557981" modified="20180214173836350" revision="0" tags="" title="About this Notebook" tmap.id="4a79aca5-2599-44d4-b2a8-81d3aea3ff89" type="text/vnd.tiddlywiki">
 <pre>Hi! I'm [[Dan Riggins|http://danielriggins.com]], a 4th-year medical student at [[Albert Einstein College of Medicine|http://www.einstein.yu.edu/]]. This is a personal notebook I've put together while studying for school. It was built with the open-source project [[Tiddlywiki|http://tiddlywiki.com/]]. 
 
 To get started search for a topic in the sidebar or see &quot;[[Pick a Starting Point!]]&quot;. 
 
-You can download this notebook and tweak it as you wish in your web browser. I host it on [[Github Pages|https://pages.github.com/]].</pre>
+You can download this notebook and tweak it as you wish in your web browser. I host it on [[Github Pages|https://pages.github.com/]].
+
+If you would like to contribute, feel free to contact me with additions, changes, corrections etc. If you are git savvy, send me a [[pull request|https://github.com/andtheWings/andtheWings.github.io/tree/master/mednotes]]!</pre>
 </div>
 <div created="20180213201946380" modified="20180213203445635" tags="[[Newborn Vomiting]]" title="Annular Pancreas">
 <pre>''Pathophys:''
@@ -8964,6 +8995,49 @@ Surgery</pre>
 * Grimace = with minimal stimulation
 * Activity =  resists extension of limbs
 * Respirations = strong and regular</pre>
+</div>
+<div bag="default" created="20150209153056091" modified="20180214184706207" revision="0" title="Bilirubin" type="text/vnd.tiddlywiki">
+<pre>Serves as a means of excreting unwanted [[heme]] and also an [[antioxidant]]
+
+Yellow in color
+
+Lipid soluble; needs [[albumin]] to travel through bloodstream
+
+Cytotoxic
+
+Formed by successive action of [[heme oxygenase]] and [[biliverdin reductase]]
+
+''Conjugation comparison:''
+
+*Unconjugated:
+** Water soluble
+** Excreted in the urine
+** Turns urine dark
+** Does not cross blood brain barrier (BBB)
+** Does not cause [[kernicterus|Kernicterus]]
+*Conjugated:
+**Fat soluble
+**Not excreted in the urine (to significant degree)
+** Doesn't turn urine dark
+** Does cross BBB
+** Does cause kernicterus</pre>
+</div>
+<div created="20180214191327350" modified="20180214193007018" tags="[[Neonatal Jaundice]]" title="Breast Jaundices">
+<pre>Aka Breast Feeding Jaundice and Breast Milk Jaundice
+
+''Comparison:''
+
+*Feeding:
+**Usually happens at age less than 7 days
+**Issue of quantity
+**Baby isn't getting fed enough so bowel movements are decreased --&gt; More reabsorption of bilirubin
+**Bilirubin largely unconjugated
+**Treatment is to feed more
+*Milk:
+**Usually happens at age greater than 7 days
+**Some component of milk inhibits conjugation of bilirubin --&gt; Decreased excretion
+**Bilirubin largely unconjugated
+**Treatment is to feed hydrolyzed formula</pre>
 </div>
 <div created="20180209003158699" modified="20180209214104057" tags="NICU" title="Bronchopulmonary Dysplasia">
 <pre>''Pathophys:''
@@ -9178,6 +9252,11 @@ Decrease intracranial pressure by means of ventriculoperitoneal drains or shunts
 
 For mental retardation or seizure disorders</pre>
 </div>
+<div created="20180214192615839" modified="20180214192746284" tags="[[Neonatal Jaundice]]" title="Kernicterus">
+<pre>Acute bilirubinemia encephalopathy --&gt; initial lethargy, hypotonia, and weak suck; can progress to opisthotonus and seizures
+
+Bilirubin-induced neurological dysfunction --&gt; choreo-athetoid cerbral palsy (move and twist like a snake), sensorineural defects, kernicterus (deep yellow staining of basal ganglia and cranial nerve nuclei) --&gt; does not develop unless bilirubin exceeds 20 mg/dl --&gt; leads to necrosis</pre>
+</div>
 <div created="20180212145858388" modified="20180212150329357" tags="[[Failure to Pass Meconium]]" title="Meconium Ileus">
 <pre>''Pathophys:''
 
@@ -9234,6 +9313,62 @@ NPO, IV antibiotics against gram-negatives, TPN
 ''Follow-up:''
 
 For need for surgery</pre>
+</div>
+<div created="20180214183207199" modified="20180214192856894" tags="Pediatrics" title="Neonatal Jaundice">
+<pre>Hyperbilirubinemia of the newborn
+
+Determine significance of [[bilirubin |Bilirubin]] level with [[BiliTool|http://bilitool.org/]].
+
+Danger is that blood brain barrier (BBB) is not mature in the neonate --&gt; conjugated bilirubin can cross and cause [[kernicterus|Kernicterus]].
+
+''Treatment:''
+
+Promote healthy breast feeding!
+
+Overall goal is to turn unconjugated bilirubin into conjugated bilirubin so it can be excreted. Usually accomplished with blue light phototherapy. 
+
+If bilirubin level is very high, you may need to use exchange transfusion or IVIG. 
+
+''Determining whether jaundice is pathologic:''
+
+*Physiologic jaundice:
+** Newborns have shorter RBC lifespan --&gt; greater turnover of hemoglobin
+**Shows up after 72 hours old
+**Lasts less than a week (2 weeks if preemie; there is a steep rise in [[UDP-GT]] at the time of birth --&gt; lower conjugation capacity if born prematurely)
+**Predominately unconjugated
+**Bili levels rise less than 5 per day
+*Pathologic jaundice:
+**Shows up less than 24 hours old
+**Lasts greater than a week (&gt;= 2 weeks if preemie)
+**Bili levels rise &gt;= 5 per day
+
+''Conceptualization by anatomy:''
+
+*''Pre''-hepatic pathology is associated with unconjugated bilirubinemia. Typically an issue of hemolysis or hemorrhage.
+* ''Intra''hepatic pathology is associated with mixed bilirubinemia. Think of metabolic diseases like:
+** [[Crigler-Najjar Syndrome]] and [[Gilbert's Syndrome]] (more of a pre-hepatic picture)
+** [[Dubin-Johnson Syndrome]] and [[Rotor Syndrome]] (more of a post-hepatic picture)
+* ''Post''-hepatic pathology is associated with conjugated bilirubinemia. Think of issues like:
+** [[Biliary Atresia]] aka obstruction (almost never gallstones or cancer like you would expect with adults)
+** [[Sepsis]]
+** Metabolic disease
+
+''Work-up aka &quot;So you have a yellow baby&quot;:''
+
+Initial blood test to consider is ''bilirubin'' (also get Coomb's, CBC, and retic count):
+
+*Bilirubin predominately ''conjugated'':
+** Work-up for ''obstruction'' with hepatic ultrasound and/or HIDA scan.
+**Also consider sepsis and metabolic disease in your differential
+*Bilirubin predominately ''unconjugated'' --&gt; Get ''Coomb's test'':
+**Coomb's test is ''positive ''--&gt; Problem is ''isoimmunization'' from Mom
+**Coomb's test is ''negative ''--&gt; Measure ''hemoglobin'' (hgb):
+***Hgb is ''low ''--&gt; Problem is ''hemorrhage ''such as cephalohematoma
+***Hgb is ''high ''--&gt; Problem is ''transfusion ''such as from twin-twin, delayed clamping, or maternal
+***Hgb is ''normal ''--&gt; Measure ''reticulocyte count'':
+****Retic is ''normal ''--&gt; Problem is concerning ''reabsorption ''of bilirubin such as from the [[&quot;Breast Jaundices&quot;]]
+****Retic is ''high ''--&gt; Problem is from ''hemolysis ''such as with [[G6PD Deficiency]], Pyruvate Kinase Deficiency, or [[Sickle Cell Disease]]
+</pre>
 </div>
 <div created="20180202042138256" modified="20180209214259930" tags="[[Newborn Management]]" title="Neonatal Resuscitation">
 <pre>''Preparation:''
@@ -9547,6 +9682,33 @@ WIndows of opportunity are times when resources are available because others are
 ''Follow-up:''
 
 *Screening echocardiogram</pre>
+</div>
+<div created="20180214172739265" modified="20180214175732971" tags="[[Time Management]]" title="Typical Day on the Floors">
+<pre>Throughout your whole day, prioritize according to the [[3 D's]].
+
+# ''Pre-Work:''
+#* Do this alone/hidden so as not to be disturbed
+#* Collect objective info (vitals, labs, documentation) to fill out data tracker and [[to do list|To Do List]]
+#* Get hand-off from night float
+# ''Resident Rounds:''
+#* This is when you are present/visible to the rest of the medical team
+#* Collect your subjective info by visiting with patients and speaking with nursing + consultants
+#* &quot;Card flip&quot; with the upper level resident where you go over your prospective plans and presentations for rounds
+#* Get your orders in (you should put your money on the table before speaking with the attending) and add to your to do list
+# ''Hard Stop'' for didactics:
+#* You should be present and non-distracted by work that should already be done
+# ''Attending Rounds:''
+#*Your chance to get feedback on your decision making and presentation
+#* Visit with patients again
+#* Make changes to the plan
+#* Add to to do list
+# ''Work Rounds:''
+#* Your time to check off the to do list
+#* Do procedures
+#* Have family meetings
+#* Write notes
+#* Eat
+#* If on-call, try to finish work before time when you will need to see new patients, otherwise, go home!</pre>
 </div>
 <div created="20180209210854611" modified="20180212044048271" tags="[[Time Management]]" title="Urgent and Important">
 <pre>Important tasks are generated by ''you''
