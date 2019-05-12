@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/danriggins
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://danielriggins.com
+  * I am danriggins (https://keybase.io/danriggins) on keybase.
+  * I have a public key ASC0a5xcKWbmvWJDZXyanFq1LzdcGL94WgtXkr768EChaAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012070eac46f46fb078a8f9d994a9512b49c039ff33f76861eb33f7f447b5c745e980a",
+      "host": "keybase.io",
+      "kid": "0120b46b9c5c2966e6bd6243657c9a9c5ab52f375c18bf785a0b5792befaf040a1680a",
+      "uid": "1d391cccabe78cce4b642323bd92f219",
+      "username": "danriggins"
+    },
+    "merkle_root": {
+      "ctime": 1557676629,
+      "hash": "3f6004eb0d7829a6fa58f46c511f800454fc1e132608f5c21189233a9ab6ac3f77ea8ee95f7cae960a48e18b2276310a74d3569607e911c430288462578e1ee1",
+      "hash_meta": "05f7a4ccdf0a808e1dc42934be0f6f25c0b5ff09664166ada5fdcf6bbf1aeaf4",
+      "seqno": 5354139
+    },
+    "service": {
+      "entropy": "Vj531sQmqga6WAzMIz4Sqp1d",
+      "hostname": "danielriggins.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.0.0"
+  },
+  "ctime": 1557676639,
+  "expire_in": 504576000,
+  "prev": "513de17cb7a51fb0387ce2fa4381845ed6a2f88cc6ea30916d2cc8f9f7982b82",
+  "seqno": 18,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgtGucXClm5r1iQ2V8mpxatS83XBi/eFoLV5K++vBAoWgKp3BheWxvYWTESpcCEsQgUT3hfLelH7A4fOL6Q4GEXtai+IzG6jCRbSzI+feYK4LEIJX4g549RLVtwjch+VqwRlTCjTC9G3AAa7wRfCb18+7PAgHCo3NpZ8RAC8b4cQuToVBwTDhhyOUbHdWxxUbdAtqblzrFtiojnJSR/gYRy+yib1VQE4Ij/XaNsaKbafBoeHw+3m3/wFiyC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIB8alVcmUllbB/aUIPTycnMM+lHVuQQ7W5EDlzsB3T9go3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/danriggins
+
+==================================================================
