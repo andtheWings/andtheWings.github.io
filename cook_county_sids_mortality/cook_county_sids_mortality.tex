@@ -117,7 +117,7 @@
 
 \title{SIDS-Related Mortality in Cook County, IL}
 \author{Daniel P. Hall Riggins}
-\date{2022-02-20}
+\date{2022-02-23}
 
 \begin{document}
 \maketitle
@@ -129,10 +129,10 @@
 \hypertarget{sids-related-mortality-in-cook-county-il}{%
 \chapter{SIDS-Related Mortality in Cook County, IL}\label{sids-related-mortality-in-cook-county-il}}
 
-\hypertarget{about}{%
-\section{About}\label{about}}
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
 
-This analysis seeks to describe, map, and model the number of Sudden Infant Death Syndrome (SIDS)-related deaths in Cook County, IL census tracts for the purposes of public health interventions.
+Although overall rates of Sudden Infant Death Syndrome are declining, dramatic racial disparities persist in many metropolitan regions, including Cook County, IL. In this analysis, we sought to identify specific micro-regions of the county where disparities have been most severe so that public health practitioners can target future interventions with high precision. We also sought to predictively model where SIDS incidence is expected to be highest based on census-level socio-ecologic factors. We hypothesized that the microregions with highest SIDS incidence would follow patterns of historic racial segregation. Similarly, we hypothesized that factors reflecting high levels of socioeconomic disadvantage would be predictive of high SIDS incidence. However, we were interested in identifying clusters in the city where are our model would not perform well with the hopes that studying these areas of poor predictive performance might identify new factors associated with particularly harmful or protective effects.
 
 \includegraphics[width=13.14in]{media/safe_sleep}
 
@@ -258,11 +258,11 @@ Then, import census population data:
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{part-exploration}{%
-\part{Exploration}\label{part-exploration}}
+\hypertarget{part-exploratory-analysis}{%
+\part{Exploratory Analysis}\label{part-exploratory-analysis}}
 
-\hypertarget{mapping-sids-related-deaths}{%
-\chapter{Mapping SIDS-related Deaths}\label{mapping-sids-related-deaths}}
+\hypertarget{mapping-sids-deaths}{%
+\chapter{Mapping SIDS Deaths}\label{mapping-sids-deaths}}
 
 \begin{verbatim}
 #> PhantomJS not found. You can install it with webshot::install_phantomjs(). If it is installed, please make sure the phantomjs executable can be found via the PATH variable.
@@ -355,8 +355,15 @@ Then, import census population data:
                 \StringTok{"Six Deaths"}
 \NormalTok{            )}
 \NormalTok{    )}
+\end{Highlighting}
+\end{Shaded}
 
-\CommentTok{\# Create map widget object}
+\hypertarget{create-the-map}{%
+\subsection{Create the Map}\label{create-the-map}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Assign map to a widget object}
 \NormalTok{m }\OtherTok{\textless{}{-}} \FunctionTok{leaflet}\NormalTok{(df) }\SpecialCharTok{\%\textgreater{}\%}
     \CommentTok{\# Use CartoDB\textquotesingle{}s background tiles}
     \FunctionTok{addProviderTiles}\NormalTok{(}\StringTok{"CartoDB.Positron"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
@@ -379,7 +386,7 @@ Then, import census population data:
 \NormalTok{    ) }\SpecialCharTok{\%\textgreater{}\%}
     \CommentTok{\#Add legend}
     \FunctionTok{addLegend}\NormalTok{(}
-        \AttributeTok{title =} \StringTok{"Number of SIDS deaths \textless{}br\textgreater{} per census tract"}\NormalTok{,}
+        \AttributeTok{title =} \StringTok{"Count of SIDS deaths \textless{}br\textgreater{} per census tract \textless{}br\textgreater{} from 2015{-}2019"}\NormalTok{,}
         \AttributeTok{values =} \SpecialCharTok{\textasciitilde{}}\NormalTok{ death\_count,}
         \AttributeTok{pal =}\NormalTok{ sids\_palette,}
         \AttributeTok{position =} \StringTok{"topright"}
@@ -396,6 +403,43 @@ Then, import census population data:
 \NormalTok{            ),}
             \AttributeTok{position =} \StringTok{"topleft"}
 \NormalTok{        )}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{describing-sids-deaths}{%
+\chapter{Describing SIDS Deaths}\label{describing-sids-deaths}}
+
+Our primary outcome in the analysis is:
+
+\texttt{count\_asphyxia} = the count of SIDS-related deaths in each census tract
+
+This is a count-type outcome, which is typically modeled using the Poisson or Negative Binomial distributions. I will be using the Negative Binomial, since the Poisson is limited by having its variance needing to be equal to its mean.
+
+Here we visualize the \texttt{count\_asphyxia} distribution of count frequencies.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{DataExplorer}\SpecialCharTok{::}\FunctionTok{plot\_histogram}\NormalTok{(df}\SpecialCharTok{$}\NormalTok{count\_asphyxia)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{03-outcome_distribution_files/figure-latex/unnamed-chunk-2-1.pdf}
+
+As expected, the majority of census tracts do not have any SIDS-related deaths.
+
+It's a little hard to see the tail of the distribution so let's tabulate:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{janitor}\SpecialCharTok{::}\FunctionTok{tabyl}\NormalTok{(df}\SpecialCharTok{$}\NormalTok{count\_asphyxia)[,}\DecValTok{1}\SpecialCharTok{:}\DecValTok{2}\NormalTok{]}
+\CommentTok{\#\textgreater{}  df$count\_asphyxia    n}
+\CommentTok{\#\textgreater{}                  0 1078}
+\CommentTok{\#\textgreater{}                  1  176}
+\CommentTok{\#\textgreater{}                  2   44}
+\CommentTok{\#\textgreater{}                  3   11}
+\CommentTok{\#\textgreater{}                  4    3}
+\CommentTok{\#\textgreater{}                  5    2}
+\CommentTok{\#\textgreater{}                  6    1}
 \end{Highlighting}
 \end{Shaded}
 

@@ -1,11 +1,13 @@
 sids-related-mortality-in-cook-county-il
-about
+abstract
 import-the-data
 dependencies
 initial-import
 join-census-tract-populations
 save-for-use-in-other-chapters
-mapping-sids-related-deaths
+mapping-sids-deaths
 code-to-produce-the-map
 load-dependencies
 reshape-data-for-use-in-the-map
+create-the-map
+describing-sids-deaths

@@ -1,6 +1,6 @@
-# (PART) Exploration {-}
+# (PART) Exploratory Analysis {-}
 
-# Mapping SIDS-related Deaths
+# Mapping SIDS Deaths
 
 
 ```
@@ -92,8 +92,13 @@ sids_palette <-
                 "Six Deaths"
             )
     )
+```
 
-# Create map widget object
+### Create the Map
+
+
+```r
+# Assign map to a widget object
 m <- leaflet(df) %>%
     # Use CartoDB's background tiles
     addProviderTiles("CartoDB.Positron") %>%
@@ -116,7 +121,7 @@ m <- leaflet(df) %>%
     ) %>%
     #Add legend
     addLegend(
-        title = "Number of SIDS deaths <br> per census tract",
+        title = "Count of SIDS deaths <br> per census tract <br> from 2015-2019",
         values = ~ death_count,
         pal = sids_palette,
         position = "topright"
